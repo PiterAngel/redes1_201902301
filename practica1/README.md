@@ -41,30 +41,46 @@ enable secret -para colocar contraseña
 ## Configuración VPC 
 
 Área de Administración 
+---
 ![Alt text](<FOTO2 admin.png>)
+---
 Área de Gerencia-Secretaria
+---
 ![Alt text](<FOTO3 gerencia.png>)
+---
 Área de Atención al Cliente
+---
 ![Alt text](<FOTO4 cliente.png>)
+---
 Área de Recursos Humanos
+---
 ![Alt text](<FOTO5 RRHH.png>)
+---
 Área de Oficina A
+---
 ![Alt text](<FOTO6 A.png>)
+---
 Área de Oficina B
+---
 ![Alt text](<FOTO7 B.png>)
+---
 Área de Oficina C
+---
 ![Alt text](<FOTO8 C.png>)
 
 ---
 
 ## Pings entre los hosts
 Ping entre Administración a Oficina A
+---
 ![Alt text](image-9.png)
-
+---
 Ping entre Oficina B a Gerencia
+---
 ![Alt text](image-10.png)
-
+---
 Ping entre Atención al Cliente a Oficina C
+---
 ![Alt text](image-11.png)
 
 ---
