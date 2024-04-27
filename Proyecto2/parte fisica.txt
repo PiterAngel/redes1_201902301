@@ -1,0 +1,48 @@
+R1
+enable
+conf t 
+no ip domain-lookup
+hostname R1
+do w
+int fa0/1
+ip add 192.178.45.1 255.255.255.255.0
+no shut
+do w
+
+int fa0/0
+ip add 10.0.0.1 255.255.255.240
+no shut 
+do w
+
+router rip
+version 2
+network 192.178.45.0
+network 10.0.0.0
+------------------------
+255.255.255.0 
+vpc1 ip 192.178.45.10
+gateway 192.178.45.1 
+------------------------------------
+R2
+conf t 
+no ip domain-lookup
+hostname R2
+do w
+int fa0/1
+ip add 192.168.45.1 255.255.255.255.0
+no shut
+do w
+
+int fa0/0
+ip add 10.0.0.2 255.255.255.240
+no shut 
+do w
+
+router rip
+version 2
+network 192.168.45.0
+network 10.0.0.0
+
+vpc1 ip 192.168.45.10
+255.255.255.0 
+gateway 192.168.45.1 
